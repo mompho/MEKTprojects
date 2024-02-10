@@ -1,0 +1,358 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: #faeaa0;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)) ,url(assets/food.jpeg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 150px;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #ead519;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.text-box{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 62px;
+}
+.text-box p{
+    margin: 10px 0px 40px;
+    font-size: 14px;
+    color: #fff;
+}
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer; 
+}
+.hero-btn:hover{
+    border: 1px solid #ead519;
+    background: #ead519;
+}
+
+nav .fa{
+    display: none;
+}
+@media(max-width: 700px){
+    .text-box h1{
+        font-size: 20px;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links{
+        position: absolute;
+        background: #000000;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    nav .fa{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .nav-links ul{
+        padding: 30px;
+    }}
+
+/*---Services---*/
+
+.services{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+p{
+    color: #777;;
+    font-size: 14px;
+    font-weight: 22px;
+    line-height: 22px;
+    padding: 10px;
+}
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.services-col{
+    flex-basis: 48%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+.services-col img{
+    width: 100%;
+}
+
+.layer{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;    
+    transition: 0.5s;
+}
+.layer:hover{
+    background: rgba(236, 206, 9, 0.985);
+}
+h3{
+    color: #242100;
+}
+
+/*----contact us----*/
+
+.cta{
+    margin: 100px auto;
+    width: 80%;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7));
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    padding: 100px 0;
+}
+.cta{
+    min-height: 20vh;
+    width: 90%;
+    border-radius: 10px;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)) ,url(assets/phone.jpeg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+@media(max-width: 700px){
+    .cta h1{
+        font-size: 24px;
+    }
+}
+/*----about us page----*/
+.sub-header{
+    height: 60vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)) ,url(assets/food.jpeg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+.sub-header h1{
+    margin-top: 80px;
+}
+.about-us{
+    width: 80%;
+    margin: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.about-col{
+    flex-basis: 48%;
+    padding: 30px 2px;
+}
+.about-col img{
+    width: 100%;
+}
+.about-col h1{
+    padding-top: 0;
+}
+.about-col p{
+    padding: 15px 0 25px;
+    color: #000000;
+}
+.yellow-btn{
+    border: 1px solid #000000;
+    background: transparent;
+    color: #000000;
+}
+.yellow-btn:hover{
+    color: #000000;
+}
+/*----food page----*/
+.sub2-header{
+    height: 60vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)) ,url(assets/food.jpeg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+.food-col{
+    width: 80%;
+    margin: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.food-col img{
+    width: 80%;
+    margin: auto;
+    padding-top: 40px;
+    padding-bottom: 50px;
+}
+.food-col h1{
+    font-size: 36px;
+    font-weight: 600;
+    text-align: center;
+}
+.food-col p{
+    color: #242100;;
+    font-size: 14px;
+    font-weight: 22px;
+    line-height: 22px;
+    padding: 10px;
+    text-align: center;
+}
+.food-col row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.food2-col{
+    flex-basis: 48%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+.food2-col img{
+    width: 100%;
+}
+
+.food-col h3{
+    color: #000000;
+}
+.black-btn{
+    border: 1px solid #000000;
+    background: transparent;
+    color: #000000;
+}
+.black-btn:hover{
+    color: #000000;
+}
+/*----cleaning page----*/
+.cleaning-col{
+    width: 80%;
+    margin: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.cleaning-col h1{
+    text-align: center;
+    color: #000000;
+}
+.subsub-header{
+    height: 60vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)) ,url(assets/cleaning.jpeg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+.subsub-header h1{
+    margin-top: 80px;
+}
+/*----contact page----*/
+.subsubsub-header{
+    height: 60vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)) ,url(assets/phone.jpeg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+.subsubsub-header h1{
+    margin-top: 80px;
+}
+.contact-us{
+    width: 80%;
+    margin: auto;
+    align-content: center;
+}
+.contact-col{
+    flex-basis: 48%;
+    margin-bottom: 30px;
+}
+.contact-col div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.contact-col div .fa{
+    font-size: 20px;
+    color: #000000;
+    margin: 10px;
+    margin-right: 30px;
+}
+.contact-col div h5{
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #000000;
+    font-weight: bold;
+}

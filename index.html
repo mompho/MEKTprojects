@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEKT Projects</title>
+    <link rel = "stylesheet" href = "styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Poppins:wght@300;400;500;600;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css" integrity="sha384-BY+fdrpOd3gfeRvTSMT+VUZmA728cfF9Z2G42xpaRkUGu2i3DyzpTURDo5A6CaLK" crossorigin="anonymous">
+</head>
+<body>
+   <section class="header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href ="index.html">HOME</a></li>
+                    <li><a href ="about.html">ABOUT US</a></li>
+                    <li><a href ="food.html">FOOD</a></li>
+                    <li><a href ="cleaning.html">CLEANING</a></li>
+                    <li><a href ="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+  <div class="text-box">
+    <h1>MEKT Projects</h1>
+    <p>We offer the best services for all events and occasions!<br></p>
+    <a href ="about.html" class="hero-btn">About Us</a>
+  </div>      
+
+   </section>
+
+<!--Services-->
+<section class="services">
+    <h1>Our Services</h1>
+    <p>Here's a look at what we have to offer:</p>
+
+    <div class="row">
+        <div class="services-col">
+            <a href="food.html">
+                <img src="assets/phonto.jpg">
+                <div class="layer">
+                     <h3>FOOD SERVICES</h3>
+            </div>
+            </a>
+        </div>        
+        <div class="services-col">
+            <a href="cleaning.html">
+                <img src="assets/phonto 2.jpg">
+                <div class="layer">
+                    <h3>CLEANING SERVICES</h3>
+            </div>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!--Contact-->
+<section class ="cta">
+    <h1>Contact Us</h1>
+    <a href="contact.html"class="hero-btn">BOOK NOW</a>
+</section>
+
+<!--Javascript for menu-->
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+
+</script>
+</body>
+</html>
